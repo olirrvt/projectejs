@@ -7,14 +7,15 @@
     <meta name="description" content="Um bot que irá moderar e deixar sua navegação segura!">
     <title>ScriptBot</title>
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/entrar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 
-    <!--  <header>
+      <header>
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+            <div class="container-fluid cabecalho-menu-item">
+              <a class="navbar-brand " href="index.html"><img class="cabecalho-imagem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="nodejs-img"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -24,51 +25,65 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="pages/entrar.html">Entrar</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Suporte</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#">Sobre</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-    </header> -->
+    </header> 
 
-    <header class="cabecalho">
+    <!-- <header class="cabecalho">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="cabecalho-imagem" alt="logo-nodejs"/>
       <nav class="cabecalho-menu">
         <a class="cabecalho-menu-item" href="https://github.com/olirrvt">GitHub</a>
         <a class="cabecalho-menu-item" href="#">Contato</a>
         <a class="cabecalho-menu-item" href="https://www.instagram.com/olirrvt_/">Instagram</a>
-        <a class="cabecalho-menu-item" href="pages/entrar.html">Entrar</a>  
+        <a class="cabecalho-menu-item" href="pages/entrar.html">Entrar</a>
       </nav>
-  </header>
-
-
-    <main class="conteudo">
-        <section class="conteudo-principal">
+  </header> -->
+<div class="conteudo">
+      <div class="row">
+        <div class="col">
+          <section class="conteudo-principal">
             <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-titulo">Botscript</h1>
+                <a style="text-decoration: none;" href="pages/sobre.html">
+                  <h1 class="conteudo-principal-escrito-titulo">Botscript</h1>
+                </a>
                 <h2 class="conteudo-principal-escrito-subtitulo">Deixe sua comunidade segura de um jeito fácil</h2>
-                <button  class="conteudo-principal-escrito-botao">Me adicione!</button>
+                <a href="/pages/adicionar.html"><button class="conteudo-principal-escrito-botao">Me adicione!</button></a>
             </div>
             <img src="img/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png" class="conteudo-principal-imagem"/>
         </section>
+        </div>
+      </div>
 
-        <section class="conteudo-secundario">
-           <h3 class="conteudo-secundario-titulo">O que ele faz por você?</h3>
-           <p class="conteudo-secundario-paragrafo">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
-           <p class="conteudo-secundario-paragrafo">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
-           <p class="conteudo-secundario-paragrafo">3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
-        </section>
-    </main>
-
+      
+      <div class="row">
+        <div class="col">
+          
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col">
+          <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">O que ele faz por você?</h3>
+            <p class="conteudo-secundario-paragrafo">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
+            <p class="conteudo-secundario-paragrafo">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
+            <p class="conteudo-secundario-paragrafo">3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
+         </section>
+        </div>
+      </div>
+</div>
     <footer class="rodape">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs-img" class="rodape-imagem"/>
+        <a href="https://nodejs.org/en/docs/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs-img" class="rodape-imagem"/></a>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

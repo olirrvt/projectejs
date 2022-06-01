@@ -51,8 +51,8 @@ body {
 }
 
 .conteudo {
+    margin-top: 33px;
     margin-bottom: 50px;
-    border-top: 0.4px solid rgb(241, 238, 238);
 }
 
 .conteudo-principal {
@@ -65,6 +65,7 @@ body {
 }
 
 .conteudo-principal-escrito {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -149,7 +150,8 @@ body {
 }
 
 .rodape {
-   padding: 32px;
-   border-top: 0.4px solid rgb(241, 238, 238);
+    background: #efe5e5;
+    padding: 5px;
+    border: 2px solid rgb(241, 238, 238);
 }
 
