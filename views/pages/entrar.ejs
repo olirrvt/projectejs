@@ -11,18 +11,28 @@
 
     <%- include("../partials/header") %> 
 
-<div class="container">
+
+<form class="formulario-entrar" action="/entrar" method="post">
     <div class="row">
         <div class="col">
-            <section class="section-principal">
-                <form action="post">
-
-                </form>
-            </section>
+            <div class="row">
+                <div class="col">
+                    <label for="user">Digite seu nome de usuário: </label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="password">Digite sua senha: </label>
+                    <input type="password" name="senha" id="senha-usuario">
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</form>
 
+
+<%- include('../partials/footer') %> 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="index.js"></script>

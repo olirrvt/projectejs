@@ -43,11 +43,19 @@ body {
     height: 50px;
 }
 
-
-
 .conteudo-principal-imagem {
     width: 150px;
     height: 150px;
+    cursor: pointer;
+    transition: 
+    width 350ms, height 350ms;
+}
+
+.conteudo-principal-imagem:hover {
+    width: 250px;
+    height: 250px;
+    transition: 
+    width 350ms, height 350ms;
 }
 
 .conteudo {
@@ -77,19 +85,29 @@ body {
     font-size: 64px;
     color: #FFF2E7;
     transition: 
-    color 450ms;
+    font-size 450ms, color 450ms;
 }
 
 .conteudo-principal-escrito-titulo:hover {
     color: aquamarine;
+    font-size: 75px;
     transition: 
-    color 450ms;
+    font-size 450ms, color 450ms;
 }
 
 .conteudo-principal-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
+    cursor: pointer;
+    transition: 
+    font-size 350ms;
+}
+
+.conteudo-principal-escrito-subtitulo:hover {
+    font-size: 27px;
+    transition: 
+    font-size 350ms;
 }
 
 .conteudo-principal-escrito-botao {
@@ -104,14 +122,15 @@ body {
     font-weight: 400;
     font-size: 24px;
     transition: 
-    background 450ms, border-radius 450ms;
+    background 450ms, width 350ms;
 }
 
 .conteudo-principal-escrito-botao:hover {
-    border-radius: 25px;
+    width: 210px;
+    height: 60px;
     background: aquamarine;
     transition: 
-    background 450ms, border-radius 450ms;
+    background 450ms, width 350ms;
 }
 
 .conteudo-principal-imagem {
@@ -134,12 +153,30 @@ body {
     font-weight: 400;
     font-size: 24px;
     margin-bottom: 16px;
+    cursor: pointer;
+    transition: 
+    font-size 350ms;
+}
+
+.conteudo-secundario-titulo:hover {
+    font-size: 30px;
+    transition: 
+    font-size 350ms;
 }
 
 .conteudo-secundario-paragrafo {
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
     font-size: 15px;
+    cursor: pointer;
+    transition: 
+    font-size 350ms;
+}
+
+.conteudo-secundario-paragrafo:hover {
+    font-size: 20px;
+    transition: 
+    font-size 350ms;
 }
 
 .rodape-imagem {
@@ -150,8 +187,8 @@ body {
 }
 
 .rodape {
-    background: #efe5e5;
+    background: #fff;
     padding: 5px;
-    border: 2px solid rgb(241, 238, 238);
+    border: none;
 }
 
