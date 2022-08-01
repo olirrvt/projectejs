@@ -12,24 +12,26 @@
     <%- include("../partials/header") %> 
 
 
-<form class="formulario-entrar" action="/entrar" method="post">
-    <div class="row">
-        <div class="col">
-            <div class="row">
-                <div class="col">
-                    <label for="user">Digite seu nome de usuário: </label>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label for="password">Digite sua senha: </label>
-                    <input type="password" name="senha" id="senha-usuario">
-                </div>
-            </div>
+<div class="login-box">
+    <h2>Login</h2>
+    <form action="#">
+        <div class="user-box">
+            <input type="text" name="nomeUser" required="">
+            <label>Username</label>
         </div>
-    </div>
-</form>
+        <div class="user-box">
+            <input type="password" name="senhaUser" required="">
+            <label>Password</label>
+        </div>
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Enviar
+        </a>
+    </form>
+</div>
 
 
 <%- include('../partials/footer') %> 
