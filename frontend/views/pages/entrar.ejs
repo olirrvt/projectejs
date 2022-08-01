@@ -12,29 +12,49 @@
     <%- include("../partials/header") %> 
 
 
-<div class="login-box">
-    <h2>Login</h2>
-    <form action="#">
-        <div class="user-box">
-            <input type="text" name="nomeUser" required="">
-            <label>Username</label>
+    <div class="col-12">
+        <div class="content" ;>
+          <div class="imagens col-6">
+            <img class="logo-login" src="img/logo-login.png">
+            <img class="img-login" src="img/img-login.png">
+          </div>
+          <!--FORMULÁRIO DE LOGIN-->
+          <div id="login" class="form-login col-6">
+            <form method="post" action="">
+              <fieldset>
+                <h1>Login</h1>
+    
+                <div class="campo">
+                  <label for="email_login">E-mail</label><br>
+                  <input id="email_login" name="email_login" required type="text" placeholder="E-mail" />
+                  <span class="login_span"> Email inválido</span>
+                </div>
+    
+                <div class="campo">
+                  <label for="senha_login">Senha</label><br>
+                  <input class="input-senha" id="senha_login" name="senha_login" required type="password" placeholder="Senha" />
+                  <img class="eye-password" id="eye-login" src="../img/eye-open.svg" width="20px" onclick="clickEyeLog()">
+                  <span class="login_span"> Senha incorreta</span>
+                </div>
+    
+                <div class="check">
+                  <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                  <label for="manterlogado">Manter-me logado</label>
+                </div>
+    
+                <button id="btn-entrar" class="btn1" type="submit" disabled>Entrar</button>
+              </fieldset>
+    
+              <div class="conta">
+                Ainda não tem conta?
+                <a class="btn2" href="/cadastro">Cadastre-se</a>
+              </div>
+            </form>
+          </div>
+    
+          </form>
         </div>
-        <div class="user-box">
-            <input type="password" name="senhaUser" required="">
-            <label>Password</label>
-        </div>
-        <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Enviar
-        </a>
-    </form>
-</div>
 
-
-<%- include('../partials/footer') %> 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="index.js"></script>
